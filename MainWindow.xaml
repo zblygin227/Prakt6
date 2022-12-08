@@ -1,0 +1,38 @@
+﻿<Window x:Class="Prakt6DeutchLand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakt6DeutchLand"
+        mc:Ignorable="d"
+        Title="Практическая работа №6" Height="322" Width="503" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Расчёт">
+                <MenuItem Header="Вычислить периметр" Click="Perimtr"/>
+                <MenuItem Header="Изменить значения поля" Click="Izmenenie"/>
+                <MenuItem Header="Увеличение размеров в 2 раза" Click="Uvelch"/>
+                <MenuItem Header="Проверка на существование треугольника" Click="ExistenceTriangle"/>
+                <MenuItem Header="Увеличивает значение на 1" Click="IncreaseValue"/>
+                <MenuItem Header="Уменьшается значение на 1" Click="DecreaseValue"/>
+            </MenuItem>
+            <MenuItem Header="Очистка" Click="Clear"/>
+            <MenuItem Header="Справка" Click="Spravka"/>
+            <MenuItem Header="Выйти" Click="Quit"/>
+        </Menu>
+        <TextBox x:Name="Pole1" HorizontalAlignment="Left" Margin="10,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Pole2" HorizontalAlignment="Left" Margin="10,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Pole3" HorizontalAlignment="Left" Margin="10,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Первая сторона" HorizontalAlignment="Left" Margin="21,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Вторая сторона" HorizontalAlignment="Left" Margin="21,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="Третья сторона" HorizontalAlignment="Left" Margin="21,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Rezultat" HorizontalAlignment="Left" Margin="10,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="56"/>
+        <TextBox x:Name="Izm1" HorizontalAlignment="Left" Margin="294,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Izm2" HorizontalAlignment="Left" Margin="294,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Izm3" HorizontalAlignment="Left" Margin="294,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Измененная Первая сторона" HorizontalAlignment="Left" Margin="281,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Измененная Вторая сторона" HorizontalAlignment="Left" Margin="281,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="Измененная Третья сторона" HorizontalAlignment="Left" Margin="281,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="Периметр треугольника:" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
